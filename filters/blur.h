@@ -18,7 +18,7 @@ public:
 
 public:
     Image Apply(Image& img) override;
-    void ApplyBlurPass(Image& src, Image& dst, int kernel_radius, double sigma_sq, double normalizer,
+    void ApplyBlurPass(Image& src, Image& dst, int kernel_radius, const std::vector<double>& kernel,
                        bool horizontal) const;
 
 protected:
