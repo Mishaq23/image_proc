@@ -1,0 +1,30 @@
+add_executable(
+    image_processor
+    image_processor.cpp
+        cmd_line_args_parser.cpp
+        filter.cpp
+        image.cpp
+        filters/crop.cpp
+        filters/blur.cpp
+        filters/neg.cpp
+        filters/gs.cpp
+        filters/sharp.cpp
+        filters/edge.cpp
+        filters/sepia.cpp
+        apply_filters.cpp
+        bmp.cpp
+        color.cpp
+        cmd_line_args_parser.h
+        filter.h
+        image.h
+        filters/crop.h
+        filters/blur.h
+        filters/neg.h
+        filters/gs.h
+        filters/sharp.h
+        filters/edge.h
+        filters/sepia.h
+        apply_filters.h
+        bmp.h
+        color.h
+)
